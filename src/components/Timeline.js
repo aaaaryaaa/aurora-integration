@@ -6,7 +6,7 @@ import TimelineCard from './TimelineCard'
 export default function Timeline() {
     return (
         <div className="lg:mx-96 mx-7 grid lg:grid-cols-3 grid-cols-2">
-            <div className='mx-auto col-span-3 lg:col-start-1 col-start-2 lg:p-20'>
+            <div className='mx-auto col-span-3 lg:col-start-1 col-start-2 lg:p-20 pb-7'>
                 <img src={timelinetitle} alt="" />
             </div>
             <div className='py-5 col-span-3 lg:col-start-1 col-start-3'><TimelineCard

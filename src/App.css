@@ -49,6 +49,12 @@
   background-image: url(./images/bgstars.svg);
 }
 
+#footer {
+  background-image: url(./images/footerbg.png);
+  background-size: 100%;
+  background-position-y: 50rem;
+}
+
 /* @media screen and (max-width: 426px) {
   .animation, .animation_layer {
     width: 100%;

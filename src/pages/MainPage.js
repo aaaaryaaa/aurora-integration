@@ -26,7 +26,7 @@ export default function MainPage() {
                 <ParallaxLayer offset={0} speed={0.2}>
                     <div className="animation_layer parallax">
                         <p className="lg:translate-y-[35rem] translate-y-[25rem] text-white text-center lg:text-lg text-xs lg:px-[25rem] px-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde laborum accusamus repellat est repudiandae ad. Reprehenderit vel soluta, illum hic dolorum nihil corrupti sit animi nesciunt minima, distinctio ad necessitatibus inventore molestias esse fugiat.</p>
-                        <Button color="primary" size="lg" variant="shadow" className="lg:translate-y-[50rem] translate-y-[45rem] lg:ml-[45%] ml-[35%] lg:w-[15rem]">
+                        <Button color="primary" size="lg" variant="shadow" className="lg:translate-y-[50rem] translate-y-[45rem] lg:ml-[45%] ml-[30%] lg:w-[15rem]">
                             <img src={trophycup} alt="" />
                             Register Now!
                         </Button>
@@ -38,15 +38,21 @@ export default function MainPage() {
                     </div>
                 </ParallaxLayer>
                 <ParallaxLayer offset={2} speed={0.2}>
-                    <div className="h-[130rem] bg-[hsl(204,56%,2%)] lg:mt-[-12rem] mt-[-10rem] " id="timeline"> {/*border-blue-700 border-solid border-3 - for checking*/ }
-                        <Timeline/>
+                    <div className="h-[130rem] bg-[hsl(204,56%,2%)] lg:mt-[-12rem] mt-[-10rem] " id="timeline"> {/*border-blue-700 border-solid border-3 - for checking*/}
+                        <Timeline />
                     </div>
                 </ParallaxLayer>
                 <ParallaxLayer offset={4} speed={0.2}>
-                    <div className="h-[70rem] bg-[hsl(204,56%,2%)] lg:mt-[-12rem] mt-[-10rem]" id="sponsor"> {/*border-blue-700 border-solid border-3 - for checking*/ }
-                        <img src={sponsorstitle} alt="" className="mx-auto"/>
+                    <div className="h-[75rem] bg-[hsl(204,56%,2%)] lg:mt-[-12rem] mt-[-10rem]" id="sponsor"> {/*border-blue-700 border-solid border-3 - for checking*/}
+                        <img src={sponsorstitle} alt="" className="mx-auto" />
                     </div>
                 </ParallaxLayer>
+                {/* <ParallaxLayer offset={4} speed={0.2}>
+                    <div className="h-[20rem] bg-[hsl(204,56%,2%)]" id="footer">
+
+
+                    </div>
+                </ParallaxLayer> */}
             </Parallax>
         </div>
     )
