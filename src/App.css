@@ -37,6 +37,18 @@
   /* background-position: bottom center; */
 }
 
+#about {
+  background-image: url(./images/bgstars.svg);
+}
+
+#timeline {
+  background-image: url(./images/bgstars.svg);
+}
+
+#sponsor {
+  background-image: url(./images/bgstars.svg);
+}
+
 /* @media screen and (max-width: 426px) {
   .animation, .animation_layer {
     width: 100%;
