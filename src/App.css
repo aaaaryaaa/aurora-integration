@@ -1,0 +1,48 @@
+
+.animation, .animation_layer {
+	width: 100%;
+	height: 70rem;
+}
+
+.animation {
+  /* display: block; */
+	position: relative;
+	z-index: 0;
+}
+
+.animation_layer {
+	background-position: center;
+	background-size: 105%;
+	background-repeat: repeat-x;
+	/* position: absolute; */
+}
+/* .animation_layer.parallax {
+	position: fixed;
+} */
+
+/* #text {
+  width: 50%;
+  margin: auto 0;
+  padding-top: 20%;
+} */
+
+#artback {
+  background-image: url(./images/mainbgnewaditi.svg);
+  background-color: #020016;
+}
+
+#mountain {
+  background-image: url(./images/bgnewaditi.svg);
+  background-size: 105%;
+  /* background-position: bottom center; */
+}
+
+/* @media screen and (max-width: 426px) {
+  .animation, .animation_layer {
+    width: 100%;
+    height: 16rem;
+  }
+  #mountain {
+    padding-top: 15%;
+  }
+} */
