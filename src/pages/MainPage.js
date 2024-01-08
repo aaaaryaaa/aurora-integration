@@ -4,13 +4,17 @@ import About from "../components/About"
 import Navbar from "../components/Navbar"
 import Timeline from "../components/Timeline"
 import Aurora from '../images/AURORA-24’.svg'
+import bgfooter from '../images/bgfooter.svg'
+import facebook from '../images/facebook.svg'
+import instagram from '../images/instagram.svg'
+import linkedin from '../images/linkedin.svg'
 import sponsorstitle from '../images/sponsorstitle.svg'
 import trophycup from '../images/trophycup.svg'
 
 export default function MainPage() {
     return (
         <div className="main-page-container">
-            <Parallax pages={5} style={{ top: '0', left: '0' }} class="animation">
+            <Parallax pages={6} style={{ top: '0', left: '0' }} className="animation block">
 
                 <ParallaxLayer offset={0} speed={0.01}>
                     <div className="animation_layer parallax text-white flex-col text-center" id="artback">
@@ -47,12 +51,20 @@ export default function MainPage() {
                         <img src={sponsorstitle} alt="" className="mx-auto" />
                     </div>
                 </ParallaxLayer>
-                {/* <ParallaxLayer offset={4} speed={0.2}>
-                    <div className="h-[20rem] bg-[hsl(204,56%,2%)]" id="footer">
-
-
+                <ParallaxLayer offset={5} speed={0.2}>
+                    <div className="h-[100%] bg-[hsl(204,56%,2%)]" id="footer">
+                        <div className="w-full lg:pt-0 pt-96">
+                            <h4 className="text-white p-5 text-center">Contact Us:</h4>
+                            <div className="flex relative lg:left-[45%] left-[29%]">
+                                <button className="relative top-[0.3rem] p-1"><img src={instagram} alt="" /></button>
+                                <button className="p-2"><img src={facebook} alt="" /></button>
+                                <button className="p-2"><img src={linkedin} alt="" /></button>
+                            </div>
+                            <h4 className="text-center p-5 text-white">Copyright &copy; 2023 All Rights Reserved | Made by ISTE Manipal</h4>
+                        </div>
+                        <img src={bgfooter} alt="" className="absolute bottom-0 lg:w-full" />
                     </div>
-                </ParallaxLayer> */}
+                </ParallaxLayer>
             </Parallax>
         </div>
     )
