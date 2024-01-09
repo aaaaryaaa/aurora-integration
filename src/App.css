@@ -1,21 +1,33 @@
+/* animation part for Partners.js -- carousel */
+.mySwiper .swiper-slide {
+  transition: transform 0.3s ease;
+}
 
-.animation, .animation_layer {
-	width: 100%;
-	height: 70rem;
+.mySwiper .swiper-slide-prev {
+  transform: scale(0.75);
+}
+
+
+/* MainPage.js -- for the parallax layer pages */
+.animation,
+.animation_layer {
+  width: 100%;
+  height: 70rem;
 }
 
 .animation {
   /* display: block; */
-	position: relative;
-	z-index: 0;
+  position: relative;
+  z-index: 0;
 }
 
 .animation_layer {
-	background-position: center;
-	background-size: 105%;
-	background-repeat: repeat-x;
-	/* position: absolute; */
+  background-position: center;
+  background-size: 105%;
+  background-repeat: repeat-x;
+  /* position: absolute; */
 }
+
 /* .animation_layer.parallax {
 	position: fixed;
 } */
@@ -26,6 +38,7 @@
   padding-top: 20%;
 } */
 
+/* putting bg images n adjusting for all pages in parallax in MainPage.js */
 #artback {
   background-image: url(./images/mainbgnewaditi.svg);
   background-color: #020016;

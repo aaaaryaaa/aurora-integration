@@ -1,20 +1,19 @@
 import { Button } from "@nextui-org/react"
 import { Parallax, ParallaxLayer } from "@react-spring/parallax"
 import About from "../components/About"
+import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
+import Partners from "../components/Partners"
 import Timeline from "../components/Timeline"
 import Aurora from '../images/AURORA-24’.svg'
-import bgfooter from '../images/bgfooter.svg'
-import facebook from '../images/facebook.svg'
-import instagram from '../images/instagram.svg'
-import linkedin from '../images/linkedin.svg'
+import gallerytitle from '../images/gallerytitle.svg'
 import sponsorstitle from '../images/sponsorstitle.svg'
 import trophycup from '../images/trophycup.svg'
 
 export default function MainPage() {
     return (
         <div className="main-page-container">
-            <Parallax pages={6} style={{ top: '0', left: '0' }} className="animation block">
+            <Parallax pages={7} style={{ top: '0', left: '0' }} className="animation block">
 
                 <ParallaxLayer offset={0} speed={0.01}>
                     <div className="animation_layer parallax text-white flex-col text-center" id="artback">
@@ -37,32 +36,30 @@ export default function MainPage() {
                     </div>
                 </ParallaxLayer>
                 <ParallaxLayer offset={1} speed={0.20}>
-                    <div className='h-[100%] bg-[hsl(204,56%,2%)]' id="about">
+                    <div className='h-[90rem] bg-[hsl(204,56%,2%)]' id="about">
                         <About />
+                        <Partners/>
                     </div>
                 </ParallaxLayer>
-                <ParallaxLayer offset={2} speed={0.2}>
-                    <div className="h-[130rem] bg-[hsl(204,56%,2%)] lg:mt-[-12rem] mt-[-10rem] " id="timeline"> {/*border-blue-700 border-solid border-3 - for checking*/}
+                <ParallaxLayer offset={2} speed={0.20}>
+                    <div className='h-[100%] bg-[hsl(204,56%,2%)]' id="about">
+                        
+                        <div><img src={gallerytitle} alt="" className="mx-auto" /></div>
+                    </div>
+                </ParallaxLayer>
+                <ParallaxLayer offset={3} speed={0.2}>
+                    <div className="h-[130rem] bg-[hsl(204,56%,2%)] lg:mt-[-12rem] mt-[-10rem] border-blue-700 border-solid border-3" id="timeline"> {/*border-blue-700 border-solid border-3 - for checking*/}
                         <Timeline />
                     </div>
                 </ParallaxLayer>
-                <ParallaxLayer offset={4} speed={0.2}>
+                <ParallaxLayer offset={5} speed={0.2}>
                     <div className="h-[75rem] bg-[hsl(204,56%,2%)] lg:mt-[-12rem] mt-[-10rem]" id="sponsor"> {/*border-blue-700 border-solid border-3 - for checking*/}
                         <img src={sponsorstitle} alt="" className="mx-auto" />
                     </div>
                 </ParallaxLayer>
-                <ParallaxLayer offset={5} speed={0.2}>
+                <ParallaxLayer offset={6} speed={0.2}>
                     <div className="h-[100%] bg-[hsl(204,56%,2%)]" id="footer">
-                        <div className="w-full lg:pt-0 pt-96">
-                            <h4 className="text-white p-5 text-center">Contact Us:</h4>
-                            <div className="flex relative lg:left-[45%] left-[29%]">
-                                <button className="relative top-[0.3rem] p-1"><img src={instagram} alt="" /></button>
-                                <button className="p-2"><img src={facebook} alt="" /></button>
-                                <button className="p-2"><img src={linkedin} alt="" /></button>
-                            </div>
-                            <h4 className="text-center p-5 text-white">Copyright &copy; 2023 All Rights Reserved | Made by ISTE Manipal</h4>
-                        </div>
-                        <img src={bgfooter} alt="" className="absolute bottom-0 lg:w-full" />
+                        <Footer/>
                     </div>
                 </ParallaxLayer>
             </Parallax>
