@@ -1,4 +1,4 @@
-import { Card, CardBody, CardHeader, Image } from "@nextui-org/react";
+import { Button, Card, CardBody, CardHeader, Image } from "@nextui-org/react";
 import React from "react";
 
 export default function TimelineCard(details) {
@@ -16,6 +16,7 @@ export default function TimelineCard(details) {
           src={details.image}
           width={270}
         />
+        <Button color="primary" size="sm">hi</Button>
       </CardBody>
     </Card>
   );

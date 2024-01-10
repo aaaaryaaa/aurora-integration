@@ -53,7 +53,9 @@ export default function Timeline() {
                 <div className='text-center text-white'>
                     <h4 className='p-5 text-[#11A8E4] font-semibold'>Unlock Your Potential, Elevate Your Skills, Ignite Your Passion!</h4>
                     <h4 className='p-5 font-bold'>Register Now for AURORA's Ultimate Experience!</h4>
-                    <Button color="primary" size="lg" variant="shadow" className="lg:w-[15rem] m-5">
+                    <Button color="primary" size="lg" variant="shadow"
+                        className="lg:w-[15rem] m-5"
+                        onClick={()=>{console.log('clicked register')}}>
                         <img src={trophycup} alt="" />
                         Register Now!
                     </Button>
