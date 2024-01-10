@@ -2,8 +2,7 @@ import { Button } from "@nextui-org/react"
 import { Parallax, ParallaxLayer } from "@react-spring/parallax"
 import About from "../components/About"
 import Footer from "../components/Footer"
-// import Navbar from "../components/Navbar"
-import Navbar from "../components/Navbar"
+import Nav from "../components/Nav"
 import Partners from "../components/Partners"
 import Timeline from '../components/Timeline'
 import Aurora from '../images/AURORA-24’.svg'
@@ -21,11 +20,6 @@ export default function MainPage() {
                         <img src={Aurora} alt="" className="m-auto translate-y-72 h-auto lg:w-[50rem] w-[15rem]" />
                     </div>
                 </ParallaxLayer>
-                <ParallaxLayer offset={0} speed={0.1}>
-                    <div className="animation_layer parallax" id="text">
-                        <Navbar/>
-                    </div>
-                </ParallaxLayer>
                 <ParallaxLayer offset={0} speed={0.5}>
                     <div className="animation_layer parallax lg:mt-40 mt-16" id="mountain"></div>
                 </ParallaxLayer>
@@ -38,6 +32,11 @@ export default function MainPage() {
                             <img src={trophycup} alt="" />
                             Register Now!
                         </Button>
+                    </div>
+                </ParallaxLayer>
+                <ParallaxLayer offset={0} speed={0.1}>
+                    <div className="animation_layer parallax" id="text">
+                        <Nav/>
                     </div>
                 </ParallaxLayer>
                 <ParallaxLayer offset={1} speed={0.20}>
