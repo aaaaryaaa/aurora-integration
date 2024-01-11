@@ -1,6 +1,7 @@
 import { Button } from "@nextui-org/react"
 import { Parallax, ParallaxLayer } from "@react-spring/parallax"
 import About from "../components/About"
+import CircularCountdown from "../components/CircleCountdown"
 import Footer from "../components/Footer"
 import Nav from "../components/Nav"
 import Partners from "../components/Partners"
@@ -20,7 +21,7 @@ export default function MainPage() {
                         <img src={Aurora} alt="" className="m-auto translate-y-72 h-auto lg:w-[50rem] w-[15rem]" />
                     </div>
                 </ParallaxLayer>
-                <ParallaxLayer offset={0} speed={0.5}>
+                <ParallaxLayer offset={0} speed={0.75}>
                     <div className="animation_layer parallax lg:mt-40 mt-16" id="mountain"></div>
                 </ParallaxLayer>
                 <ParallaxLayer offset={0} speed={0.2}>
@@ -39,14 +40,15 @@ export default function MainPage() {
                         <Nav/>
                     </div>
                 </ParallaxLayer>
-                <ParallaxLayer offset={1} speed={0.20}>
+                <ParallaxLayer offset={1} speed={0.20} id="partners">
                     <div className='h-[90rem] bg-[hsl(204,56%,2%)]' id="about">
                         <About />
+                        <CircularCountdown/>
                         <Partners />
                     </div>
                 </ParallaxLayer>
-                <ParallaxLayer offset={2} speed={0.20}>
-                    <div className='h-[100%] bg-[hsl(204,56%,2%)]' id="about">
+                <ParallaxLayer offset={2} speed={0.20} id="partners">
+                    <div className='h-[100%] bg-[hsl(204,56%,2%)]' id="sponsor">
 
                         <div><img src={gallerytitle} alt="" className="mx-auto" /></div>
                     </div>

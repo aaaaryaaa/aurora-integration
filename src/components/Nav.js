@@ -28,36 +28,40 @@ export default function App() {
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Button>
             Home
-          </Link>
+          </Button>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link color="foreground" href="#">
+          <Button>
             About
-          </Link>
+          </Button>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Button>
             Partners
-          </Link>
+          </Button>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Button>
             Timeline
-          </Link>
+          </Button>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Button>
             Sponsors
-          </Link>
+          </Button>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
-        {/* <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
-        </NavbarItem> */}
+        <NavbarItem className="hidden lg:flex">
+          {/* HERE IS LOGIN */}
+          <Link href='/register'>                 
+            Login
+          </Link>
+        </NavbarItem>
         <NavbarItem>
+          {/* HERE IS HACKATHON */}
           <Button as={Link} color="primary" href="#" variant="flat">
             Hackathon
           </Button>
